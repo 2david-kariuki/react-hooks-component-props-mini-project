@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header.";
-import About from "./About";
-import ArticleList from "./ArticleList";
-import blogData from "../data/blog"; // Assuming blog data is imported
+import Header from "./Header..jsx";
+import About from "./About.jsx";
+import ArticleList from "./ArticleList.jsx";
+import blogData from "../data/blog";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         />
       </aside>
       <main>
-        <ArticleList posts={blogData} />
+        <ArticleList posts={blogData.posts} />
       </main>
     </div>
   );

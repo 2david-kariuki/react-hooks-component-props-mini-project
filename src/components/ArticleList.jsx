@@ -11,7 +11,12 @@ const ArticleList = ({ posts }) => {
   return (
     <main>
       {posts.map((post) => (
-        <Article key={post.id} title={post.title} content={post.content} />
+        <Article
+          key={post.id}
+          title={post.title}
+          date={post.date}
+          preview={post.preview}
+        />
       ))}
     </main>
   );
